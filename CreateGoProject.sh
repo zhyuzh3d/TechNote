@@ -18,6 +18,9 @@ fi
 # 创建项目目录并进入
 mkdir "$project_name" && cd "$project_name"
 
+# 初始化项目
+go mod init "$project_name"
+
 # 创建main.go文件
 echo 'package main
 
